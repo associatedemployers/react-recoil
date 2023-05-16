@@ -17,7 +17,14 @@ const loggedInState = selector({
   }
 });
 
+
+const authAtom = atom({
+    key: 'auth',
+    default: null
+});
+
 export {
   sessionState,
   loggedInState,
+  authAtom
 };
