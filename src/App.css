@@ -40,3 +40,116 @@
     transform: rotate(360deg);
   }
 }
+
+.selection {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background:
+      linear-gradient(to bottom, lightgray, rgba(0, 0, 0, .2)),
+      url('../statics/img/login_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    padding: 5em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero.hero__payroll {
+    background:
+      linear-gradient(to bottom, rgba(57, 57, 57, .8), rgba(0, 0, 0, .95)),
+      url('../statics/img/main_bg.jpg');
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero.hero__payroll h1 {
+    font-size: 1em;
+    color: white;
+  }
+
+  .hero.hero__license {
+    background-color: black;
+    color: white;
+    flex-direction: column;
+  }
+  .hero.hero__license > * {
+    margin-bottom: 1em;
+  }
+
+  .hero.hero__license > h1 {
+    font-size: 3em;
+    font-weight: 700;
+  }
+
+  .hero.hero__license > h2 {
+    font-size: .5em;
+    font-weight: 100;
+  }
+
+  .hero.hero__license > h2 > a {
+    color: darkgray;
+    font-weight: 100;
+  }
+
+.login_btn {
+    color: white;
+    background-color: black;
+    border-radius: .2rem;
+    padding: .8em 1.7em;
+    text-decoration: none;
+    box-shadow: 0px 7px 5px -3px rgba(0, 0, 0, .8);
+  }
+  nav {
+    display: flex;
+    padding: 1em;
+    margin: 0;
+    border-bottom: 5px solid lightgray;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  nav > .menu {
+    text-align: right;
+  }
+  nav > .logo > h1,
+  nav > .logo > h2 {
+    margin: 0;
+    padding: 0;
+  }
+  nav > .logo > h2 {
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+  }
+  nav > .logo > h1 > .bar {
+    padding: 0 1px;
+  }
+  nav > .logo .slate {
+    color: rgb(77, 77, 77);
+  }
+  nav > .logo .obsidian {
+    color: black;
+    font-weight: 700;
+  }
+  nav > div {
+    flex: auto;
+  }
+  footer {
+    text-align: center;
+    padding: 1em 2em;
+    color: white;
+    background-color: black;
+  }
+
+
+

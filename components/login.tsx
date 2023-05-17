@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TextInput, PasswordInput, Tooltip } from '@mantine/core';
+import { TextInput, PasswordInput, Tooltip, Box, Text, Title } from '@mantine/core';
 import { ButtonProgress } from './buttons/progressButton.tsx';
 function Email() {
   return (
@@ -64,9 +64,12 @@ const useStyles = createStyles((theme) => ({
 export function InputTooltip() {
   return (
     <>
+      <Box sx={{ width: "25%",backgroundColor: "white", padding: '4em' }}>
+        <Title order={2} >Log into Obsidian</Title>
       <Email />
       <Password />
       <ButtonProgress />
-    </>
+      </Box>
+      </>
   );
 }
