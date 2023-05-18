@@ -5,16 +5,21 @@ import './App.css';
 import { InputTooltip } from '../components/login';
 
 export default function App() {  
+    const [auth, setAuth] = useRecoilState(authAtom);
+
 function useUserActions () {
-  const setAuth = useSetRecoilState(authAtom);
-  
+  // const setAuth = useSetRecoilState(authAtom);
+
     const login = async (email, password) => {
         const response = await fetch(`http://localhost:3000/login?password=${password}&email=${email}`,{ method: 'GET' });
-        let {user} = await response.json();
-        setAuth(user);
+      let { user } = await response.json();
+      setAuth(user)
+        // setAuth(user);
     }
     const logout = async (email, password) => {
-        setAuth(null);
+      // setAuth(null);
+            setAuth(null)
+
     }
        return {
         login,
@@ -22,7 +27,7 @@ function useUserActions () {
     }
 }
   const userActions = useUserActions();
-  const auth = useRecoilValue(authAtom);
+  // const auth = useRecoilValue(authAtom);
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
